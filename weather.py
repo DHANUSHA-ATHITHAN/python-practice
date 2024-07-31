@@ -1,6 +1,7 @@
 import os
-from langchin_community.utilities import OpenweatherMapAPIWRapper
-os.environ["open_WEATHERMAP_API_KEY"]=" 1507f0a1b84feab8b66e61ef64cbd06e "
-weather=OpenweatherMapAPIWRapper()
-result=weather.run("kanyakumari")
+from langchain_community.utilities import OpenWeatherMapAPIWrapper
+os.environ['OPENWEATHERMAP_API_KEY'] = "c2aef44761586b94368ca465ae9c6f98"
+weather=OpenWeatherMapAPIWrapper()
+Location = input("Enter the Location:")
+result = weather.run(Location)
 print(result)
